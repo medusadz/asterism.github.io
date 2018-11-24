@@ -1,0 +1,16 @@
+<html>
+<head>
+<script >
+function ecrire(x, y){setInterval (function (){if(y.innerHTML != x.value){y.innerHTML = x.value;ecrire(x, y)}}, 50);}
+
+</script>
+</head>
+<body>
+<div id="go">
+<input type="text" id="inpat" onClick="ecrire(this, document.getElementById('hello'))"></input>
+<p id="hello"></p>
+</div>
+<script >
+</script>
+</body>
+</html>
